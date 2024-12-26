@@ -1,0 +1,150 @@
+/* Reset dan styling dasar ....*/
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial' ;
+    line-height: 1.6;
+    color: #000000; /* warna font produk */
+}
+
+/* Header styling */
+header {
+    background-color: #000000; /* warna background belakang logo */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image { /* ukuran logo bien pojok kiri */
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-family: 'Absolute Empire';
+    font-weight: bold;
+    color: #ffffff;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 15px;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+/* Hero section */
+.hero {
+    background-color: #EEEEEE;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.hero h1 {
+    font-family: 'Florence';
+    font-size: 2.5rem;
+    margin-bottom: 0rem;
+}
+
+/* Product grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-item h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.product-item p {
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.product-item button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.product-item button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 5rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 1rem;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}

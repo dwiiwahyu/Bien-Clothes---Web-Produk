@@ -1,0 +1,118 @@
+/* CSS untuk Bien Clothes - Toko Pakaian */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333;
+}
+
+header {
+    background-color: #000000; /* warna background belakang logo */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.logo-text {
+    font-family: 'Absolute Empire';
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 15px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+/* Styling untuk Bagian Kontak */
+.contact-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.contact-container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #007bff;
+}
+
+.contact-item p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-item img {
+        margin-bottom: 10px;
+    }
+
+    .contact-item a {
+        font-size: 1rem;
+    }
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem; /* Menambahkan padding agar konten footer tidak menempel */
+    margin-top: 5rem; /* Memberi jarak antara footer dan konten utama */
+}
